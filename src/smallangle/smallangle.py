@@ -3,6 +3,12 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
+@click.command()
+@click.argument("number")
+
+@click.option(
+    "-n",
+)
 
 def sin(number):
     x = np.linspace(0, 2 * pi, number)
@@ -17,4 +23,4 @@ def tan(number):
 
 
 if __name__ == "__main__":
-    sin(10)
+    sin()
